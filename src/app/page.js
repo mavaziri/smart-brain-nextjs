@@ -16,6 +16,11 @@ import { loadFull } from "tsparticles";
 import styles from "./page.module.css";
 
 function Home() {
+  if (typeof window !== 'undefined') {
+    console.log(window.innerWidth);
+    console.log(window.innerHeight);
+  }
+
   const [input, setInput] = useState("");
   const [imageUrl, setImageUrl] = useState("");
   const [imageError, setImageError] = useState(false);
