@@ -6,8 +6,9 @@ import Logo from "@/components/Logo/Logo";
 import ImageFormLink from "@/components/ImageFormLink/ImageFormLink";
 import Rank from "@/components/Rank/Rank";
 import FaceRecognition from "@/components/FaceRecognition/FaceRecognition";
-import Particles from "react-tsparticles";
-import particlesOptions from "@/config/particles";
+// import Particles from "react-tsparticles";
+// import particlesOptions from "@/config/particles";
+import ParticlesBg from "particles-bg";
 import Signin from "@/Forms/Signin/Signin";
 import Register from "@/Forms/Register/Register";
 import { jwtDecode } from "jwt-decode";
@@ -161,12 +162,13 @@ function Home() {
       entries: data.entries,
       joined: data.joined,
     };
-    
+
     setUser(user);
   };
 
   return (
     <div className={styles.App}>
+      <ParticlesBg type="circle" bg={true} />
       <Navigation
         setImageUrl={setImageUrl}
         isSignedIn={isSignedIn}
@@ -195,13 +197,6 @@ function Home() {
           )}
         </>
       )}
-
-      <Particles
-        className={styles.particles}
-        id="tsparticles"
-        init={tsparticlesInit}
-        options={particlesOptions}
-      />
     </div>
   );
 }
