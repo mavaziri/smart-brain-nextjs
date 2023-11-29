@@ -1,0 +1,66 @@
+.signin-register-heading,
+.input-flex,
+.signin-register-button,
+.register-button {
+  margin: 15px 0 15px 0;
+}
+
+.signin-register-form {
+  margin: 4rem auto 4rem auto;
+}
+
+.card {
+  width: 15rem;
+  margin: 0 auto;
+  padding: 0.5rem 4rem 0.5rem 4rem;
+  box-shadow: 4px 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.signin-register-heading {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.input-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputField {
+  font-size: 15px;
+  padding: 7px 10px 7px 10px;
+  background-color: transparent;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.inputField:hover {
+  background-color: black;
+  color: white;
+}
+
+.inputField:focus {
+  outline: none;
+}
+
+.signin-register-button {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 7px;
+  font-weight: 600;
+  cursor: pointer;
+  backface-visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.signin-register-button:hover {
+  transform: scale(1.05);
+}
+
+.sr-button {
+  cursor: pointer;
+  font-size: large;
+  font-weight: 600;
+}
